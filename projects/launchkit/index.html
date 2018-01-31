@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+	<meta charset="utf-8">
+	<title>LaunchKit</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+	
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></
+script>
+ <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/
+respond.min.js"></script>
+ <![endif]-->
+
+ <style>
+/* inject my personal styles here */
+
+body {
+	padding: 0;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.navbar {
+	background-color: transparent;
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+	color: white;
+	margin-bottom: 0;
+}
+ .navbar-brand {
+	 font-size:1.8em;
+	 background-color: transparent;
+	 color: white;
+ }
+
+ .navbar-default .navbar-nav > li > a {
+ 	color: #212121;
+ }
+
+ .navbar-default .navbar-nav > li.active {
+ 	background-color: transparent;
+ }
+	
+ #topContainer {
+	 background-image: url("images/landing_bg_3.jpg");
+	 height:400px;
+	 width:100%;
+	 background-size:cover;
+	 height: 100vh;
+	 position: relative;
+	 }
+	  
+ #topRow {
+	 margin-top:100px;
+	 text-align:center;
+ }
+
+ .promo-text {
+ 	color: black;
+ 	background-color: rgba(255,255,255,0.5);
+ 	border-radius: 5px;
+ 	display: block;
+ 	margin: 0 auto;
+ 	width: 80%;
+ 	padding: 20px 50px;
+ 	margin-top: 10vh;
+ }
+	
+ #topRow h1 {
+	 font-size:300%;
+ }
+
+ .landing-phone-icon {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 80px;
+ }
+
+ @media (max-width: 550px){
+ 	.landing-phone-icon {
+ 		left: 0;
+ 		height: 350px;
+ 		width: auto;
+ 	}
+ }
+
+ .summary-container {
+ 	border-bottom: 1px solid #ccc;
+ 	width: 90%;
+ 	margin: 0 auto;
+ 	padding-bottom: 50px;
+ }
+
+ .feature-section {
+ 	min-height: 100vh;
+ }
+
+ .feature-section .row {
+ 	height: 80vh;
+ }
+
+ .feature-column {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-around;
+ 	height: 100%;
+ }
+
+.column-left {
+	padding: 0px 0 0 100px;
+}
+
+.column-left .title {
+	margin-top: 10px;
+}
+
+.column-right .feature-image {
+	height: 550px;
+}
+
+ .feature-column img {
+ 	margin: auto;
+ }
+	
+.feature-section-blue {
+	background-color: #5975e3;
+	width: 100vw;
+	margin-left: -15px;
+}
+
+.feature-section-blue .column-left {
+	padding: 0 80px 0 0;
+}
+
+
+ #emailSignup {
+	 margin-top:50px;
+ }
+	
+ .bold {
+	 font-weight:bold;
+ }
+	
+ .marginTop {
+	 margin-top:30px;
+ }
+	
+ .center {
+	 text-align:center;
+ }
+	
+ .title {
+	 margin-top:100px;
+	 font-size:300%;
+ }
+	
+ #footer {
+	 background-color:#5975e3;
+	 padding-top:70px;
+	 width:100%;
+	 height: auto;
+ }
+
+ #footer .title {
+ 	margin-top: 0;
+ }
+
+ .signup-form {
+ 	width: 450px;
+ 	margin: 30px auto 0 auto;
+ }
+
+ .signup-form .signup-form-input {
+ 	width: 100%;
+ 	height: 40px;
+ }
+
+ .signup-form .signup-form-button {
+ 	width: 100%;
+ 	height: 35px;
+ }
+	
+ .marginBottom {
+	 margin-bottom:30px;
+ }
+ .appstoreImage {
+	 width:170px;
+ }
+
+ .app-icons {
+ 	margin: 100px auto;
+ }
+
+ .footer-final {
+ 	background-color: white;
+ 	border-top: 1px solid black;
+ 	width: 100vw;
+ 	margin-left: -15px;
+ 	padding: 10px 15px;
+ }
+
+ .footer-final .left-float {
+ 	float: left;
+ }
+
+ .footer-final .right-float {
+ 	float: right;
+ }
+
+ </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+ 
+<div class="navbar navbar-default navbar-fixed-top">
+	
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" datatarget=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand">LOGO</a>
+		</div>
+		
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">    
+				<li class="active">
+					<a href="#topContainer">Home</a>
+				</li>
+				<li>
+					<a href="#details">About</a>
+				</li>
+				<li>
+					<a href="#footer">Download</a>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="email" placeholder="Email" class="form-control" />
+				</div>
+				<div class="form-group">
+					<input type="password" placeholder="Password" class="form-control" />
+				</div>
+				<button type="submit" class="btn btn-success">Log In</button>
+			</form>
+			
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid contentContainer" id="topContainer">
+	<img class='landing-phone-icon' src='images/landing_phone.png'>
+	<div class="row" id='topRow'>
+		<div class='col-md-6'>
+		</div>
+		<div class="col-md-6">
+			<div class='promo-text'>
+				<h1 class="marginTop">LaunchKit</h1>
+				<p class="lead">Provides everything you need to quickly get a promotional site for your mobile app up and running.</p>
+				<p class='lead'>Just add your images, text, and branding!</p>
+				<p class='center'>
+					<img src="images/google_appstore.png" class="appstoreImage" />
+					<img src="images/apple_appstore.png" class="appstoreImage" />
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="details">
+	
+	<div class="row" class="center">
+		<div class='summary-container'>
+			<h1 class="center title">Quick Summary of Key Features</h1>
+			<p class="lead center">And a longer summary. Or you can delete this if you want, because this template is fully customizable.</p>
+		</div>
+	</div>
+
+	<div class='feature-section'>
+		<div class='row'>
+		<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 feature-column column-left'>
+			<h1 class='title'>First great app feature!</h1>
+			<p class='lead'>Appster/Apply/App.io will help you run faster/swim farther/jump higher/take better photographs.</p>
+			<p class='lead'>You can very easily edit the picture on the left to show your app in action. Images are located at app/images once you download the source.</p>
+		</div>
+		<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 feature-column column-right'>
+			<img class='feature-image' src='images/iphone-6-gold.png'>
+		</div>
+		</div>
+	</div>
+
+	<div class='feature-section feature-section-blue'>
+		<div class='row'>
+		<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 feature-column column-right'>
+			<img src='images/device_responsive.png'>
+		</div>
+		<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 feature-column column-left'>
+			<h1 class='title'>Fully Responsive Design! (Or another feature that you want to promote)</h1>
+			<p class='lead'>The LaunchKit template was developed from the ground up to be a retina-friendly, fully responsive template. Which means that it will serve a quality user experience on any screen or device.</p>
+			<p class='lead'>Of course, this template is standards-compliant while leveraging the newest HTML5 and CSS3 technologies.</p>
+		</div>
+		</div>
+	</div>
+
+	<div class="row" class="center">
+		<div class='summary-container'>
+			<h1 class="center title">Transition to the next section</h1>
+			<p class="lead center">The subsectoins below can be used to highlight key points, customer testimonials, or anything in between.</p>
+		</div>
+	</div>
+
+
+	<div class="row marginBottom">
+
+		<div class="col-md-4 marginTop">
+			<h2>
+				<span class="glyphicon glyphicon-music"></span> Header
+			</h2>
+			<p>A description of a great feature of your app, or a life-changing customer testimonial can go here. Or swap these text sections out for a few more pictures of your app in action.</p>
+			<button class="btn btn-success marginTop">Learn More!</button>
+		</div>
+		<div class="col-md-4 marginTop">
+			<h2>
+				<span class="glyphicon glyphicon-off"></span> Header
+			</h2>
+			<p>A description of a great feature of your app, or a life-changing customer testimonial can go here. Or swap these text sections out for a few more pictures of your app in action.</p>
+			<button class="btn btn-success marginTop">Learn More!</button>
+		</div>
+		  
+		<div class="col-md-4 marginTop">
+			<h2>
+				<span class="glyphicon glyphicon-pencil"></span> Header
+			</h2>
+			<p>A description of a great feature of your app, or a life-changing customer testimonial can go here. Or swap these text sections out for a few more pictures of your app in action.</p>
+			<button class="btn btn-success marginTop">Learn More!</button> 
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="container-fluid" id="footer">
+	
+
+	<div class="row">
+
+		<div class='col-lg-12 col-md-12 col-sm-12 col-sx-12'>
+		<h1 class="title center">Final Call to Action</h1>
+		<p class='center lead'>Signup for important news and updates, or download our app.</p>
+	</div>
+
+	<div class='row'>
+		<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+		
+			<form class='signup-form'>
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input type="email" class="signup-form-input form-control" placeholder="Your email" />
+				</div>
+				<input type="submit" class="signup-form-button btn btn-default btn marginTop" />
+			</form>
+		</div>
+	</div>
+		
+	<div class='row'>
+		<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>	
+			<p class='center marginTop marginBottom app-icons'>
+				<img src="images/google_appstore.png" class="appstoreImage" />
+				<img src="images/apple_appstore.png" class="appstoreImage" />
+			</p>
+		</div>
+	</div>
+
+	<div class='row footer-final'>
+		<span class='left-float'>&#169 2014 jmknoll</span>
+		<span class='right-float'>Contact: <a href='http://www.jamesonknoll.com'>Jameson Knoll</a></span>
+	</div>
+
+</div>
+
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
+jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as
+needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(".contentContainer").css("min-height",$(window).height());
+</script>
+	
+
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	
+	<!-- build:js(.) scripts/plugins.js -->
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+	<!-- endbuild -->
+	
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+	  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	  e.src='https://www.google-analytics.com/analytics.js';
+	  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	  ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script>
+  </body>
+</html>
